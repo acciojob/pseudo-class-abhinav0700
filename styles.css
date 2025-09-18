@@ -1,16 +1,17 @@
 #container {
   margin: 20px;
-  font-size: 18px; /* main content size */
+  font-size: 18px;
+  position: relative; /* helps apply pseudo-elements */
 }
 
 #container::before {
-  content: "Before Element ";
-  color: #f00; /* red color */
+  content: "Before Element";
+  color: rgb(255, 0, 0); /* must match Cypress test */
   font-size: 20px;
 }
 
 #container::after {
-  content: " After Element";
-  color: #f00; /* red color */
+  content: "After Element";
+  color: rgb(255, 0, 0); /* must match Cypress test */
   font-size: 20px;
 }
